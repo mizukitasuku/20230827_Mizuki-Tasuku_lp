@@ -12,7 +12,6 @@ a {
 
 /* header */
 .header {
-    position: fixed;
     top: 0;
     left: 0;
     width: 98%;
@@ -42,6 +41,13 @@ h2 {
     padding-bottom: 10px;
 }
 
+@media screen and (max-width: 1300px) {
+    h2 {
+        font-size: 20px;
+        color: #3f3f3fdf;
+        padding-bottom: 6px;
+    }
+}
 
 /* main */
 /* main1 */
@@ -53,7 +59,7 @@ h2 {
 }
 
 .main1__title {
-    margin-top: 100px;
+    margin-top: 150px;
     width: 100%;
     margin-left: 14%;
 }
@@ -78,7 +84,6 @@ h2 {
     font-size: 32px;
     color: rgb(197, 35, 167);
     margin-bottom: 20px;
-
 }
 
 .main1__title--font2-span {
@@ -109,12 +114,38 @@ h2 {
     right: 0;
 }
 
-/* main1 */
+@media screen and (max-width: 1300px) {
+    .main1__title {
+        margin-top: 70px;
+    }
+    .main1__box--img {
+        width: 600px;
+    }
+    .main1__title--font1 {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+    .main1__title--font1-1 {
+        padding-bottom: 30px;
+    }
+    .main1__title--font2 {
+        font-size: 25px;
+        color: rgb(197, 35, 167);
+        margin-bottom: 20px;
+    }
+    .main1__title--logo1,
+    .main1__title--logo2 {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+}
 
+/* main1 */
 /* main2 */
 
 .main2 {
     margin-left: 25%;
+    margin-bottom: 50px;
 }
 
 .main2__title {
@@ -160,6 +191,24 @@ h2 {
     background-color: rgba(0, 0, 0, 0.157);
 }
 
+@media screen and (max-width: 1300px) {
+    .main2__title--logo {
+        font-size: 14px;
+        color: palevioletred;
+        font-family: 'Courier New', Courier, monospace;
+        padding-bottom: 15px;
+    }
+    .main2__list--line {
+        padding: 15px 0px;
+    }
+    .main2__list--line:before,
+    .main2__list--line:after {
+        width: 600px;
+    }
+    .main2__list--news {
+        font-size: 14px;
+    }
+}
 
 /* main2 */
 /* main3 */
@@ -172,7 +221,6 @@ h2 {
 .main3__title {
     text-align: center;
     padding-top: 30px;
-    margin: 30px 0px;
 }
 
 .main3__title--logo {
@@ -205,6 +253,21 @@ h2 {
     line-height: 30px;
 }
 
+@media screen and (max-width: 1300px) {
+    .main3__title--logo {
+        font-size: 14px;
+        color: palevioletred;
+        font-family: 'Courier New', Courier, monospace;
+        padding-bottom: 12px;
+    }
+    .main3__contents--img {
+        width: 300px;
+    }
+    .main3__contents--font1,
+    .main3__contents--font2 {
+        font-size: 15px;
+    }
+}
 /* main3 */
 /* main4 */
 
@@ -250,8 +313,8 @@ h2 {
 }
 
 .main4__contents--box1-img {
-    width: 30%;
-    padding: 10%;
+    width: 200px;
+    padding-top: 40px;
 }
 
 .main4__contents--box1-font-text {
@@ -283,7 +346,7 @@ h2 {
 
 .main4__contents--box2-img,
 .main4__contents--box3-img {
-    width: 30%;
+    width: 140px;
 }
 
 .main4__contents--box2-font-name,
@@ -299,18 +362,60 @@ div .main4__contents--box3-font-text {
     padding-right: 10px;
 }
 
+@media screen and (max-width: 1450px) {
+    .main4__contents--box2-font-text,
+    .main4__contents--box3-font-text {
+        font-size: 15px;
+    }
+    .main4__contents--box2-img,
+    .main4__contents--box3-img {
+        width: 130px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .main4__title--logo {
+        font-size: 14px;
+        color: palevioletred;
+        font-family: 'Courier New', Courier, monospace;
+        padding-bottom: 12px;
+    }
+    .main4__contents {
+        margin: 30px 200px;
+    }
+    .main4__contents--box2-font-text,
+    .main4__contents--box3-font-text {
+        font-size: 12px;
+    }
+    .main4__contents--box2-img,
+    .main4__contents--box3-img {
+        width: 120px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .main4__contents {
+        margin: 30px 140px;
+    }
+    .main4__contents--box2-font-text,
+    .main4__contents--box3-font-text {
+        font-size: 11px;
+    }
+    .main4__contents--box2-img,
+    .main4__contents--box3-img {
+        width: 110px;
+    }
+}
+
 /* main4 */
 /* main5 */
 
 .main5 {
     background-color: rgba(220, 220, 220, 0.445);
     margin: 0 auto;
-    display: inline-block;
+    padding: 100px;
 }
 
 .main5__title {
-    margin-left: 190px;
-    padding-top: 30px;
+    margin-left: 50px;
 }
 
 .main5__title--logo {
@@ -324,12 +429,10 @@ div .main4__contents--box3-font-text {
     display: flex;
     justify-content: space-around;
     border-radius: 15px 15px 15px 15px;
-    margin-left:150px;
-    margin-right: 150px;
 }
 
 .main5__contents--box {
-    margin: 20px 20px 40px 40px;
+    padding: 20px 20px 40px 40px;
 }
 
 .main5__contents--box-img img{
@@ -401,6 +504,19 @@ div .main4__contents--box3-font-text {
     justify-content: center;
 }
 
+@media screen and (max-width: 1300px) {
+    .main5__title--logo {
+        font-size: 14px;
+        color: palevioletred;
+        font-family: 'Courier New', Courier, monospace;
+        padding-bottom: 15px;
+    }
+
+    .main5__title {
+        margin-left: 30px;
+    }
+}
+
 /* main5 */
 /* main6 */
 
@@ -415,12 +531,6 @@ div .main4__contents--box3-font-text {
 
 .main6__title {
     text-align: left;
-}
-
-.main6__title--font {
-    font-size: 30px;
-    color: #545353;
-    margin-bottom: 30px;
 }
 
 .main6__title--logo {
@@ -452,6 +562,15 @@ div .main4__contents--box3-font-text {
     color: #939090;
 }
 
+@media screen and (max-width: 1300px) {
+    .main6__title--logo {
+        font-size: 14px;
+        color: palevioletred;
+        font-family: 'Courier New', Courier, monospace;
+        padding-bottom: 15px;
+    }
+}
+
 /* main6 */
 /* main7 */
 
@@ -476,7 +595,8 @@ div .main4__contents--box3-font-text {
     position: relative;
 }
 
-.main7__img1--font,.main7__img2--font {
+.main7__img1--font,
+.main7__img2--font {
     color: white;
     position: absolute;
     font-size: 30px;
@@ -488,6 +608,22 @@ div .main4__contents--box3-font-text {
     margin: auto;
     height: 70px;
     text-align: center;
+}
+@media screen and (max-width: 1300px) {
+    .main7__img1--font,
+    .main7__img2--font {
+        color: white;
+        position: absolute;
+        font-size: 30px;
+        font-weight: bolder;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 100px;
+    }
 }
 
 /* main7 */
@@ -543,14 +679,13 @@ div .main4__contents--box3-font-text {
     content: "";
     position: absolute;
     top: 50%;
-    right: 15px;
+    left: 30px;
     background: url(../img/mailicon.svg) no-repeat;
     background-size: cover;
     width: 30px;
     height: 30px;
     transform: translateY(-50%);
 }
-/* メールアイコンが表示されない。 */
 
 /* main8 */
 
